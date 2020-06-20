@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <div class="navbar-dark text-white">
       <div class="container">
-        <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+        <nav class="navbar px-0 py-5 navbar-expand-lg navbar-dark">
           <button
             class="navbar-toggler"
             type="button"
@@ -18,18 +19,22 @@ function NavBar() {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a href="index.html" class="pl-md-0 p-3 text-light">
-                Home
-              </a>
-              <a href="app.html" class="p-3 text-decoration-none text-light">
-                My Works
-              </a>
-              <a href="form.html" class="p-3 text-decoration-none text-light">
-                Blogs
-              </a>
-              <a href="form.html" class="p-3 text-decoration-none text-light">
-                Be in Touch
-              </a>
+              <Link to="/">
+                <span class="p-3 text-decoration-none text-light">Home</span>
+              </Link>
+              <Link to="/works">
+                <span class="p-3 text-decoration-none text-light">
+                  My Works
+                </span>
+              </Link>
+              <Link to="/blogs">
+                <span class="p-3 text-decoration-none text-light">Blogs</span>
+              </Link>
+              <Link to="/contact">
+                <span class="p-3 text-decoration-none text-light">
+                  Be in Touch
+                </span>
+              </Link>
             </div>
           </div>
         </nav>
