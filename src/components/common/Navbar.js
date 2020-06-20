@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div class="navbar-dark text-white">
       <div class="container">
-        <nav class="navbar px-0 py-5 navbar-expand-lg navbar-dark">
+        <nav class="navbar px-0 pt-5 navbar-expand-lg navbar-dark">
           <button
             class="navbar-toggler"
             type="button"
