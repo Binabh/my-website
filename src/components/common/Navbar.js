@@ -20,18 +20,18 @@ function NavBar() {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <Link to="/">
-                <span class="p-3 text-decoration-none text-light">Home</span>
+                <span class="px-3 text-decoration-none text-light">Home</span>
               </Link>
               <Link to="/works">
-                <span class="p-3 text-decoration-none text-light">
+                <span class="px-3 text-decoration-none text-light">
                   My Works
                 </span>
               </Link>
               <Link to="/blogs">
-                <span class="p-3 text-decoration-none text-light">Blogs</span>
+                <span class="px-3 text-decoration-none text-light">Blogs</span>
               </Link>
               <Link to="/contact">
-                <span class="p-3 text-decoration-none text-light">
+                <span class="px-3 text-decoration-none text-light">
                   Be in Touch
                 </span>
               </Link>

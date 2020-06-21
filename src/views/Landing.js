@@ -1,6 +1,8 @@
 import React from "react";
 import TechIUse from "../components/TechIUse";
 import Card from "../components/common/Card";
+import SocialMedia from "../components/SocialMedia";
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -21,10 +23,12 @@ function Landing() {
                   <Card />
                 </div>
                 <div class="col-xl-12 pt-3">
-                  <span class="btn btn-shadow btn-block btn-primary">
-                    Read More Blogs
-                    <span class="fas fa-file ml-2"></span>
-                  </span>
+                  <Link to="/blogs">
+                    <span class="btn btn-shadow btn-block btn-primary">
+                      Read More Blogs
+                      <span class="fas fa-file ml-2"></span>
+                    </span>
+                  </Link>
                 </div>
               </div>
               <div class="row pt-3">
@@ -32,14 +36,19 @@ function Landing() {
                   <Card />
                 </div>
                 <div class="col-xl-12 pt-3">
-                  <span class="btn btn-shadow btn-block btn-success">
-                    See More Works
-                    <span class="fas fa-code ml-2"></span>
-                  </span>
+                  <Link to="/works">
+                    <span class="btn btn-shadow btn-block btn-success">
+                      See More Works
+                      <span class="fas fa-code ml-2"></span>
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
-            <TechIUse />
+            <div class="col-xl-6">
+              <TechIUse />
+              <SocialMedia />
+            </div>
           </div>
         </div>
       </div>

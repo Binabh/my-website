@@ -2,8 +2,8 @@ import React from "react";
 
 function Card({
   item = {
-    title: "good title is very very long",
-    content: "Some quick example make up the bulk of the cards content.",
+    title: "A lazy person using placeholders",
+    content: "This is the story of a lazy person who uses placeholders...",
   },
 }) {
   return (
