@@ -21,7 +21,7 @@ steps:
       git init
       git config user.name "Binabh"
       git config user.email "binabhdevkota@gmail.com"
-      git remote set-url origin https://Binabh:${GIT_TOKEN}@github.com/Binabh/personalsite.git
+      git remote add origin https://Binabh:${GIT_TOKEN}@github.com/Binabh/personalsite.git
       # add and commit /build/ folder
       git add build
       git commit -m "deploy the bundle"
