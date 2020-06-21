@@ -19,18 +19,18 @@ function NavBar() {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <Link to="/">
+              <Link to={process.env.PUBLIC_URL + "/"}>
                 <span class="px-3 text-decoration-none text-light">Home</span>
               </Link>
-              <Link to="/works">
+              <Link to={process.env.PUBLIC_URL + "/works"}>
                 <span class="px-3 text-decoration-none text-light">
                   My Works
                 </span>
               </Link>
-              <Link to="/blogs">
+              <Link to={process.env.PUBLIC_URL + "/blogs"}>
                 <span class="px-3 text-decoration-none text-light">Blogs</span>
               </Link>
-              <Link to="/contact">
+              <Link to={process.env.PUBLIC_URL + "/contact"}>
                 <span class="px-3 text-decoration-none text-light">
                   Be in Touch
                 </span>

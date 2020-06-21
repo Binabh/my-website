@@ -23,7 +23,7 @@ function Landing() {
                   <Card />
                 </div>
                 <div class="col-xl-12 pt-3">
-                  <Link to="/blogs">
+                  <Link to={process.env.PUBLIC_URL + "/blogs"}>
                     <span class="btn btn-shadow btn-block btn-primary">
                       Read More Blogs
                       <span class="fas fa-file ml-2"></span>
@@ -36,7 +36,7 @@ function Landing() {
                   <Card />
                 </div>
                 <div class="col-xl-12 pt-3">
-                  <Link to="/works">
+                  <Link to={process.env.PUBLIC_URL + "/works"}>
                     <span class="btn btn-shadow btn-block btn-success">
                       See More Works
                       <span class="fas fa-code ml-2"></span>

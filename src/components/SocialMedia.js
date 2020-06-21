@@ -68,7 +68,7 @@ function SocialMedia() {
       </div>
       <div class="row pt-4">
         <div class="col-xl-12">
-          <Link to="/contact">
+          <Link to={process.env.PUBLIC_URL + "/contact"}>
             <span class="btn btn-block btn-shadow btn-outline-warning">
               <span class="fa fa-envelope mr-2"></span>
               Send message from here
