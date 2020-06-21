@@ -14,10 +14,23 @@ function App() {
       <NavBar />
       <div>
         <Switch>
-          <Route exact path="/" component={Landing}></Route>
-          <Route path="/blogs" component={Blogs}></Route>
-          <Route path="/works" component={Works}></Route>
-          <Route path="/contact" component={Contact}></Route>
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            component={Landing}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/blogs"}
+            component={Blogs}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/works"}
+            component={Works}
+          ></Route>
+          <Route
+            path={process.env.PUBLIC_URL + "/contact"}
+            component={Contact}
+          ></Route>
           <Route component={NotFound}></Route>
         </Switch>
       </div>
