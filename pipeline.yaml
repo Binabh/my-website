@@ -23,7 +23,8 @@ steps:
       git config user.email "binabhdevkota@gmail.com"
       git remote add origin https://Binabh:${GIT_TOKEN}@github.com/Binabh/personalsite.git
       # add and commit /build/ folder
-      git add build
+      cd /build
+      git add -A
       git commit -m "deploy the bundle"
       # push the commit to the public repository
       git push origin HEAD:master --force
