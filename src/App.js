@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "./views/Landing";
-import "./assets/css/style.css";
+import "./assets/css/main.css";
 import NavBar from "./components/common/Navbar";
 import NotFound from "./views/PageNotFound";
 import Contact from "./views/Contact";

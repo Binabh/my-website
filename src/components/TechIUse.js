@@ -13,12 +13,12 @@ function TechIUse() {
   return (
     <>
       <div class="row">
-        <div class="col-xl-2">
+        <div class="col-xl-2 col-2">
           <span class="text-dark super-big-text">I</span>
         </div>
-        <div class="col-xl-10">
+        <div class="col-xl-10 col-10">
           <p class="text-grey text-spacey">
-            am <span class="text-success">frontend/mobile developer</span> and{" "}
+            am <span class="text-success">frontend/mobile developer</span> &{" "}
             <span class="text-success">Geomatics Engineer</span>.
           </p>
           <div class="row mx-0">

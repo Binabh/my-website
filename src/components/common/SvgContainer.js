@@ -2,8 +2,8 @@ import React from "react";
 
 function SvgContainer({ image, altText }) {
   return (
-    <div class="svg m-2">
-      <img src={image} alt={altText} />
+    <div class="svg-container m-2">
+      <img src={image} alt={altText} class="svg-content" />
     </div>
   );
 }

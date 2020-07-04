@@ -1,0 +1,281 @@
+$border-radius: 6px;
+$border-radius-lg: 6px;
+
+$body-bg: #0c0d16;
+$body-color: #e4e2ff;
+
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+
+$dark: #32334a;
+$black: #000;
+
+$primary: #714cdf;
+$secondary: #16a4de;
+$success: #17b06b;
+$info: #2983fe;
+$warning: #f97515;
+$danger: #ff3c5c;
+$light: #dbebfb;
+$dark: $dark;
+
+$display1-size: 4.5rem !default;
+$display2-size: 3.5rem !default;
+$display3-size: 2.5rem !default;
+$display4-size: 2rem !default;
+
+$card-cap-bg: #1e2037;
+$card-bg: #32334a;
+$card-border-color: #151623;
+
+// Darkening Bootstrap's grayscale considerably
+$white: #fff !default;
+$gray-100: #2d2e3f !default;
+$gray-200: #282a38 !default;
+$gray-300: #28293e !default;
+$gray-400: #28293e !default;
+$gray-500: #1c1d2c !default;
+$gray-600: #1d1e2f !default;
+$gray-700: #151623 !default;
+$gray-800: #11111d !default;
+$gray-900: #0a0b14 !default;
+$black: #000 !default;
+
+$custom-control-indicator-bg: $gray-700;
+$nav-tabs-border-color: $gray-700;
+$nav-tabs-link-active-border-color: $gray-700;
+$pagination-border-color: $gray-700;
+$pagination-hover-border-color: $gray-700;
+$pagination-disabled-border-color: $gray-700;
+$thumbnail-border-color: $gray-700;
+
+/* List of color variables that arent in theme colors */
+$code-color: #2983fe !default;
+//</editor-fold>
+
+//<editor-fold desc="White">
+$component-active-color: $dark !default;
+$table-dark-accent-bg: rgba($dark, 0.05) !default;
+$table-dark-hover-bg: rgba($dark, 0.075) !default;
+$btn-box-shadow: inset 0 1px 0 rgba($dark, 0.15), 0 1px 1px rgba($black, 0.075) !default;
+$input-bg: $gray-400 !default;
+$custom-control-indicator-checked-color: $dark !default;
+$custom-control-indicator-active-color: $dark !default;
+$custom-select-bg: $dark !default;
+$custom-file-focus-box-shadow: 0 0 0 0.075rem $dark,
+  0 0 0 0.2rem theme-color("primary") !default;
+$dropdown-bg: $dark !default;
+$navbar-dark-color: rgba($dark, 0.5) !default;
+$navbar-dark-hover-color: rgba($dark, 0.75) !default;
+$navbar-dark-active-color: rgba($dark, 1) !default;
+$navbar-dark-disabled-color: rgba($dark, 0.25) !default;
+$navbar-dark-toggler-border-color: rgba($dark, 0.1) !default;
+$pagination-bg: $dark !default;
+$pagination-active-color: $white !default;
+$pagination-disabled-bg: $dark !default;
+$card-bg: $dark !default;
+$tooltip-color: $body-color !default;
+$popover-bg: $dark !default;
+$modal-content-bg: $dark !default;
+$progress-bar-color: $dark !default;
+$list-group-bg: $dark !default;
+$carousel-control-color: $dark !default;
+$carousel-indicator-active-bg: $dark !default;
+$carousel-caption-color: $dark !default;
+$close-text-shadow: 0 1px 0 $dark !default;
+$kbd-color: $dark !default;
+$input-border-color: $gray-800;
+$text-muted: #81839a !default;
+$blockquote-small-color: $text-muted !default;
+
+$input-color: #adabc6 !default;
+$input-placeholder-color: #a19fb9 !default;
+
+$nav-tabs-link-active-color: $body-color !default;
+$pagination-disabled-color: $gray-800 !default;
+
+$list-group-hover-bg: $gray-100 !default;
+//$list-group-disabled-color:      $gray-600 !default;
+$list-group-action-color: $body-color !default;
+
+//</editor-fold>
+
+//<editor-fold desc="body-bg">
+$table-dark-color: $body-color;
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "utils";
+
+// Vibrant Sea
+$font-family-display: "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+
+$button-shadow-colors: (
+  primary: #986edf,
+  secondary: #87c4f2,
+  success: #43cb8e,
+  info: #25a8eb,
+  warning: #f99511,
+  danger: #ff707f,
+  light: #9ea9b6,
+  dark: #191a2d,
+);
+
+@mixin btn-shadow($color) {
+  border-color: $color;
+  transition: none;
+
+  &,
+  &.focus,
+  &:focus {
+    box-shadow: 3px 3px 0 $color, 2px 2px 0 $color, 1px 1px 0 $color;
+  }
+
+  &:hover {
+    box-shadow: 5px 5px 0 $color, 4px 4px 0 $color, 3px 3px 0 $color,
+      2px 2px 0 $color, 1px 1px 0 $color;
+    transform: translate(-2px, -2px);
+    transition: all 0.3s ease;
+    //border: 1px solid yellow;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translate(4px, 4px) !important;
+    transition: all 0.1s ease;
+  }
+}
+
+body {
+  background-image: url("../images/ng-background-dot.png");
+}
+
+.btn-shadow {
+  margin-left: 8px;
+
+  @each $color, $value in $button-shadow-colors {
+    &.btn-#{$color},
+    &.btn-outline-#{$color} {
+      @include btn-shadow($value);
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    &.btn-#{$color},
+    &.btn-outline-#{$color} {
+      &:hover {
+        background-color: $value;
+        //border-color: $value;
+      }
+    }
+  }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: $font-family-display;
+  .text-white &,
+  &.text-white {
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.text-reduced-opacity {
+  opacity: 0.5;
+}
+
+.text-grey {
+  color: #a0a0a0;
+}
+
+.text-darkblue {
+  color: #4d4d74;
+}
+
+.text-darkgrey {
+  color: #6f6974;
+}
+
+.text-mono {
+  font-family: $font-family-display;
+}
+
+.super-big-text {
+  margin: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 18rem;
+  text-align: left;
+  font-family: "Times New Roman";
+  line-height: 13rem;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 10%;
+  padding-bottom: 12%;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.btn-success {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: #c1f8c2;
+  }
+}
+
+.vim-caret {
+  animation: vimCaret 1s linear infinite;
+}
+
+@keyframes vimCaret {
+  0% {
+    background-color: transparent;
+  }
+  49% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+// Regenerate list group items
+@each $color, $value in $theme-colors {
+  @include list-group-item-variant(
+    $color,
+    theme-color-level($color, -2),
+    theme-color-level($color, 6)
+  );
+}
+
+// Regenerate alerts
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(
+      theme-color-level($color, -5),
+      theme-color-level($color, -2),
+      theme-color-level($color, 7)
+    );
+  }
+}
+
+// Regenerate table row variants
+@each $color, $value in $theme-colors {
+  @include table-row-variant($color, theme-color-level($color, -2));
+}
