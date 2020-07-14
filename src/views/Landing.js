@@ -12,8 +12,8 @@ function Landing() {
           <div class="row">
             <div class="col-xl-6">
               <h1 class="display-2 text-success">
-                <span class="text-white-50">&gt;&gt;</span> Hello Worl
-                <span class="vim-caret">d</span>
+                <span class="text-white-50">&gt;&gt;</span> Hello Visito
+                <span class="vim-caret">r</span>
               </h1>
               <div class="row pt-3">
                 <div class="col-xl-6">
