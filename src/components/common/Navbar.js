@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div class="navbar-dark text-white">
-      <div class="container">
-        <nav class="navbar px-0 pt-5 navbar-expand-lg navbar-dark">
+    <div className="navbar-dark text-white">
+      <div className="container">
+        <nav className="navbar px-0 pt-5 navbar-expand-lg navbar-dark">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarNavAltMarkup"
@@ -15,23 +15,27 @@ function NavBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
               <Link to={process.env.PUBLIC_URL + "/"}>
-                <span class="px-3 text-decoration-none text-light">Home</span>
+                <span className="px-3 text-decoration-none text-light">
+                  Home
+                </span>
               </Link>
               <Link to={process.env.PUBLIC_URL + "/works"}>
-                <span class="px-3 text-decoration-none text-light">
+                <span className="px-3 text-decoration-none text-light">
                   My Works
                 </span>
               </Link>
               <Link to={process.env.PUBLIC_URL + "/blogs"}>
-                <span class="px-3 text-decoration-none text-light">Blogs</span>
+                <span className="px-3 text-decoration-none text-light">
+                  Blogs
+                </span>
               </Link>
               <Link to={process.env.PUBLIC_URL + "/contact"}>
-                <span class="px-3 text-decoration-none text-light">
+                <span className="px-3 text-decoration-none text-light">
                   Be in Touch
                 </span>
               </Link>

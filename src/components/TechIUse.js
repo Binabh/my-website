@@ -12,33 +12,33 @@ import SvgContainer from "./common/SvgContainer";
 function TechIUse() {
   return (
     <>
-      <div class="row">
-        <div class="col-xl-2 col-2">
-          <span class="text-dark super-big-text">I</span>
+      <div className="row">
+        <div className="col-xl-2 col-2">
+          <span className="text-dark super-big-text">I</span>
         </div>
-        <div class="col-xl-10 col-10">
-          <p class="text-grey text-spacey">
-            am <span class="text-success">frontend/mobile developer</span> &{" "}
-            <span class="text-success">Geomatics Engineer</span>.
+        <div className="col-xl-10 col-10">
+          <p className="text-grey text-spacey">
+            am <span className="text-success">frontend/mobile developer</span> &{" "}
+            <span className="text-success">Geomatics Engineer</span>.
           </p>
-          <div class="row mx-0">
-            <p class="text-grey text-spacey">
-              <span class="text-secondary">develop</span> with:
+          <div className="row mx-0">
+            <p className="text-grey text-spacey">
+              <span className="text-secondary">develop</span> with:
             </p>
             <SvgContainer image={ReactLogo} altText="React JS" />
             <SvgContainer image={FlutterLogo} altText="Flutter" />
             <SvgContainer image={PythonLogo} altText="Python" />
           </div>
-          <div class="row mx-0">
-            <p class="text-grey text-spacey">
-              <span class="text-secondary">design</span> with:
+          <div className="row mx-0">
+            <p className="text-grey text-spacey">
+              <span className="text-secondary">design</span> with:
             </p>
             <SvgContainer image={InkscapeLogo} altText="InkScape" />
             <SvgContainer image={AdobeXDLogo} altText="Adobe XD" />
           </div>
-          <div class="row mx-0">
-            <p class="text-grey text-spacey">
-              <span class="text-secondary">make maps</span> with:
+          <div className="row mx-0">
+            <p className="text-grey text-spacey">
+              <span className="text-secondary">make maps</span> with:
             </p>
             <SvgContainer image={QGisLogo} altText="Q GIS" />
             <SvgContainer image={OpenlayersLogo} altText="Openlyers" />

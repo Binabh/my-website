@@ -5,8 +5,8 @@ import "./assets/css/main.css";
 import NavBar from "./components/common/Navbar";
 import NotFound from "./views/PageNotFound";
 import Contact from "./views/Contact";
-import Blogs from "./views/Blogs";
 import Works from "./views/Works";
+import Work from "./views/Work";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
             component={Landing}
           ></Route>
           <Route
-            path={process.env.PUBLIC_URL + "/blogs"}
-            component={Blogs}
+            path={process.env.PUBLIC_URL + "/works/:id"}
+            component={Work}
           ></Route>
           <Route
             path={process.env.PUBLIC_URL + "/works"}

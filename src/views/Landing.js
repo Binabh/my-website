@@ -1,40 +1,40 @@
 import React from "react";
 import TechIUse from "../components/TechIUse";
-import Card from "../components/common/Card";
-import SocialMedia from "../components/SocialMedia";
-import { Link } from "react-router-dom";
+import SocialMedia from "../components/common/SocialMedia";
 import Hello from "../components/Hello";
 import Featured from "../components/Featured";
 import codingIllustration from "../assets/images/coding_illustration.svg";
+import Email from "../components/common/Email";
 
 function Landing() {
   return (
     <>
-      <div class="jumbotron bg-transparent mb-0 radius-0 py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12 pt-5">
+      <div className="jumbotron bg-transparent mb-0 radius-0 py-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-12 pt-5">
               <Hello />
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-6">
+          <div className="row">
+            <div className="col-xl-6">
               <img src={codingIllustration} alt="ill" width="100%" />
             </div>
-            <div class="col-xl-6 pt-2">
+            <div className="col-xl-6 pt-2">
               <TechIUse />
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-12 pt-2">
+          <div className="row">
+            <div className="col-xl-12 pt-2">
               <Featured />
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-6">
+          <div className="row">
+            <div className="col-xl-6">
+              <Email />
               <SocialMedia />
             </div>
-            <div class="col-xl-6 pt-2">
+            <div className="col-xl-6 pt-2">
               <img src={codingIllustration} alt="ill" width="100%" />
             </div>
           </div>
