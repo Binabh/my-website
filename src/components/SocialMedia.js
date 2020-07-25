@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function SocialMedia() {
   return (
-    <div class="container p-5">
-      <div class="row pb-1">
-        <h4 class="text-light text-monospace">Follow Me on Social Media</h4>
+    <>
+      <div class="row p-4">
+        <h2 class="text-light text-monospace">Social Media</h2>
       </div>
       <div class="row py-1">
         <div class="col-xl-6">
@@ -66,17 +66,7 @@ function SocialMedia() {
           </a>
         </div>
       </div>
-      <div class="row pt-4">
-        <div class="col-xl-12">
-          <Link to={process.env.PUBLIC_URL + "/contact"}>
-            <span class="btn btn-block btn-shadow btn-outline-warning">
-              <span class="fa fa-envelope mr-2"></span>
-              Send message from here
-            </span>
-          </Link>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 

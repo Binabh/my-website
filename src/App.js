@@ -11,7 +11,7 @@ import Works from "./views/Works";
 function App() {
   return (
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <div>
         <Switch>
           <Route
