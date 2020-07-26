@@ -3,7 +3,7 @@ function Email() {
   const [isAlertVisible, setAlertVisible] = useState(false);
   const handleClick = () => {
     setAlertVisible(true);
-    navigator.clipboard.writeText("binabhdevkota@gmail.com");
+    navigator.clipboard.writeText("info@binabh.com.np");
   };
   return (
     <>
@@ -27,7 +27,7 @@ function Email() {
             disabled
             type="email"
             className="form-control"
-            value="binabhdevkota@gmail.com"
+            value="info@binabh.com.np"
           />
         </div>
         <div className="col-xl-3">
@@ -41,7 +41,7 @@ function Email() {
         </div>
         <div className="col-xl-3">
           <a
-            href="mailto:binabhdevkota@gmail.com"
+            href="mailto:info@binabh.com.np"
             className="btn btn-block btn-outline-info"
           >
             <span className="fa fa-envelope mr-2"></span>
