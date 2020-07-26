@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 function Works() {
   return (
     <div className="container pt-5">
-      <div className="row p-3">
-        <h2 className="text-white">
+      <div className="row">
+        <h2 className="text-white-50">
           <Link to="/">
-            <span className="fas fa-home ml-2"></span>
+            <span className="fas fa-home"></span>
           </Link>{" "}
-          / My Projects
+          &gt; My Projects
         </h2>
       </div>
-      <div className="row">
+      <div className="row pt-4">
         {works.map((work) => (
           <div className="col-xl-3">
             <Card

@@ -6,15 +6,16 @@ function Work({ match }) {
   const [work] = works.filter((item) => item.id === +match.params.id);
   return (
     <div className="container pt-5">
-      <div className="row p-3">
-        <h2 className="text-white">
+      <div className="row">
+        <h2 className="text-white-50">
           <Link to="/">
-            <span className="fas fa-home ml-2"></span>
+            <span className="fas fa-home"></span>
           </Link>{" "}
-          <Link to="/works">/ My Projects</Link> /{work.title}
+          &gt;
+          <Link to="/works"> My Projects</Link> &gt; {work.title}
         </h2>
       </div>
-      <div className="row">{work.body}</div>
+      <div className="row pt-4">{work.body}</div>
     </div>
   );
 }
